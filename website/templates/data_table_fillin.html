@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+        <title>My Website</title>
+        
+    </head>
+    <body>
+        <ul id="ford_dealers">
+            {% for fd in ford_dealers %}
+            <li>  {{ fd[1] }}  {{ fd[2] }} {{fd[3]}} {{fd[4]}}</li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
