@@ -5,4 +5,9 @@
 
 ## How to install
 
-pip install -r requirements.txt
+
+## please follow below method.
+
+pip list --format=freeze > requirements.txt
+
+## known issue https://stackoverflow.com/questions/62885911/pip-freeze-creates-some-weird-path-instead-of-the-package-version
