@@ -98,6 +98,11 @@
       .bd-mode-toggle .dropdown-menu .active .bi {
         display: block !important;
       }
+
+      .ford_logo{
+        width: 500px;
+        align: center;
+      }
     </style>
         
         
@@ -119,6 +124,9 @@
         <!--a class="btn btn-primary" href="" role="button">Call to action</a-->
       </div>
       <!-- Hero -->
+      <div class="container">
+        <img class="ford_logo" src="{{ url_for('static', filename='assets/img/ford_logo.png') }}">
+      </div>
         <h1>Welcome to my fabulous website!</h1>
         <ul><li><a href="{{url_for('about')}}"> Link to About Page</a></li></ul>
         <ul><li><a href="{{url_for('data')}}"> Link to Data Page</a></li></ul>
