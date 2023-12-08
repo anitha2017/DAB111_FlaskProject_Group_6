@@ -1,11 +1,67 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>My Website</title>
-        
-    </head>
-    <body>
-        <h1>About</h1>
-        <p>These are the awesome details about my page.</p>
+<head>
+    <title>About</title>
+
+    <script src="{{ url_for('static', filename='assets/js/color-modes.js') }}" ></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+ 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='assets/dist/css/bootstrap.min.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='assets/css/style.css') }}"> 
+</head>
+<body>
+        <div class="container">
+          <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+            <div class="col-md-3 mb-2 mb-md-0">
+              <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+                <img class="ford_logo_header" width="60" src="{{ url_for('static', filename='assets/img/ford_logo.png') }}">
+              </a>
+            </div>
+      
+            <ul class="nav nav-pills">
+              <li class="nav-item"><a href="{{url_for('index')}}" class="nav-link">Home</a></li>
+              <li class="nav-item"><a href="{{url_for('data')}}" class="nav-link">Data</a></li>
+              <li class="nav-item"><a href="{{url_for('about')}}" class="nav-link active">About Us</a></li>
+              </ul>
+          </header>
+        </div>
+        <main>
+        <div class="container">
+            <div class="about-1">
+
+              <h3>Project about Ford Dealership:</h3>
+              
+              <p style="margin-top: 10px;"> Information regarding a Ford dealership has been extracted from ford.ca. 
+
+              
+              
+             
+
+             
+                
+              Here is the process for accessing dealership information: 
+
+              Visit ford.ca, and choose the "Find a Dealer" option under Shop option located in the footer options below. Enter CityName like "Toronto,ON" and Click Apply.
+      
+             
+              Here is the direct <a href ='https://www.ford.ca/dealerships/?gnav=footer-shop'> link. </a>
+              
+             <br>
+
+              The definition of Ford dealer information refers to details and data pertaining to authorized retail establishments that sell new and used Ford vehicles. This information typically includes the following information.
+              
+              <ul>
+              <li> dealername </li>
+              <li> distance </li>
+              <li> dealer's address like street number, street name, city, state and postal code  </li>
+               <li> dealer phone number </li>
+             </p>
+        </div>
+        </main>
+
     </body>
 </html>
